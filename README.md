@@ -55,25 +55,25 @@ Key design point: **"if reviewers don't respond, remove access."** The system de
 
 The reviewer sees every Finance-Team member alongside a **recommendation** from the decision helper — *Approve* for the active user, *Deny* for the two flagged as inactive (no sign-in in 30 days). Here the reviewer **approves Ben despite the "Deny (recommended)" flag**, because he's confirmed as still in Finance. The machine recommends; the human decides. That override is the whole point of a review — judgement, not automation.
 
-![Reviewer approves a member against the system's Deny recommendation](2.png)
+![Reviewer approves a member against the system's Deny recommendation](3.png)
 
 ### 3. Removing stale access — a deny with justification
 
 The member who no longer belongs to Finance is **denied**, with a written justification — *"No longer requires Finance access – remove."* That reason becomes the audit record, and the denial is what triggers the automatic removal.
 
-![Reviewer denies a stale member with a written justification](3.png)
+![Reviewer denies a stale member with a written justification](4.png)
 
 ### 4. Review completed
 
 The review completes with its outcomes recorded: **2 approved, 1 denied**, every decision attributed to the reviewer.
 
-![Completed review — 2 approved, 1 denied](4.png)
+![Completed review — 2 approved, 1 denied](5.png)
 
 ### 5. Automatic remediation — the whole point made visible
 
 Because auto-apply was enabled, the denied user is **removed from the group automatically** — no manual cleanup, nothing to forget. The result column proves it: *"Success. Successfully removed from membership."* The two approved users are untouched.
 
-![Results — denied user successfully removed from membership, approved users retained](5.png)
+![Results — denied user successfully removed from membership, approved users retained](6.png)
 
 This is the difference between a review that produces a *report* and one that produces an *outcome*. The access didn't just get flagged — it got revoked.
 
@@ -81,7 +81,7 @@ This is the difference between a review that produces a *report* and one that pr
 
 Every decision, justification, reviewer identity, and the removal action is written to the audit log — the evidence an ISO 27001 or SOX access-certification audit asks for on demand.
 
-![Access review audit log](6.png)
+![Access review audit log](7.png)
 
 ---
 
